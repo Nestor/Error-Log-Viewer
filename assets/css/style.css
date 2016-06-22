@@ -1,0 +1,76 @@
+body,html {
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	font-family: 'Consolas', sans-serif;
+}
+
+::selection {
+	background: #00FF00;
+	color: #000;
+}
+::-moz-selection {
+	background: #00FF00;
+	color: #000;
+}
+
+.logs {
+	color: #00FF00;
+	position: absolute;
+	width: calc(100% - 30px); /* 50% - 30px); */
+	height: calc(100% - 75px - 30px);
+	padding: 15px;
+	overflow: auto;
+	white-space: pre-line;
+
+}
+.logs:nth-child(2) {
+	right: 0px;
+	border-left: 1px solid #00FF00;
+}
+
+.controls {
+	display: table;
+	position: absolute;
+	width: 100%; /* 50%; */
+	height: 75px;
+	bottom: 0px;
+	border-top: 1px solid #00FF00;
+}
+.controls > div {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.controls:nth-child(4) {
+	right: 0px;
+	border-left: 1px solid #00FF00;
+}
+
+.button {
+	font: initial !important;
+	font-family: 'Consolas', sans-serif !important;
+	display: inline-block;
+	padding: 10px;
+	background-color: #00FF00;
+	color: #000;
+	cursor: pointer;
+	border: 1px solid #00FF00;
+	outline: 0 !important;
+	
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.button:active {
+	background-color: #000;
+	color: #00FF00;
+}
+.button.disabled {
+	background-color: #000;
+	color: #00FF00;
+}
